@@ -1,0 +1,76 @@
+
+
+EX 1
+
+let f = let s=newref(0)
+in proc(d){
+  begin
+    setref(s.deref(s)+1):
+    deref(s)
+    end
+}
+in begin
+    debug((f 0)):
+    (f 0)
+    (f 0)
+end
+
+Enviroment
+[f:= ProcVal("d", BeginEnd...., [ s:= RefVal 0])]
+
+Store 
+0 <- NumVal 0
+
+
+EX 2
+
+let a = newref(newref(2))
+in debug(a)
+
+Enviroment-
+[a:= RefVal 1]
+
+Store-
+0 -> NumVal 2
+1 -> RefVal 2
+
+EX 3
+let a = newref ( newref (2+1))
+in debug ( a )
+
+
+Env-
+[a:= RefVal 1]
+Store-
+0 -> NumVal 3
+1 -> RefVal 0
+
+
+EX 4
+
+let a = (let s = newref(0)
+in proc(i) {
+begin
+setref(s , deref(s)+ i );
+deref(s)
+end
+})
+in debug(a)
+
+Env-
+[a:= NumVal 1]
+
+Store-
+
+0-> NumVal 0
+1-> NumVal 1
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+# dune utop
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/jamesmurphy/.cache/dune/db
+# Workspace root: "/Users/jamesmurphy/CS 496/src/let"
+# Auto-detected concurrency: 10
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" : "/Users/jamesmurphy/CS 496/src/let/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /Users/jamesmurphy/.opam/default/bin/ocamlc.opt -config > /var/folders/31/sk0pb4x56cl2l4ts9d_cx8dw0000gn/T/dune_e0450c_output
